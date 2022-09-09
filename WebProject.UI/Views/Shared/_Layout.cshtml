@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Necessary Elements for a responsive layout -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+
+
+    <!-- My Script File -->
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css">
+</head>
+<body class="subBody">
+
+    <!-- Start Navbar Menu -->
+
+    <nav class="navbar mt-3">
+        <div class="container">
+            <a class="navbar-brand mainNavbarColor" href="/Home/Index">Student Expenditure Calculator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="mainNavbarColor fs-3 fw-bolder">...</i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Operation Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Help/HelpPage">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Home/Index" onclick="DeleteAllReportsData()">Restart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/BudgetCalculator/BaseAddUpdateDeletePage">Operation Item</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Finish Navbar Menu -->
+
+
+
+    @RenderBody()
+
+    <!-- My JavaScript File -->
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+
+    <script src="~/Scripts/umd/popper.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/main.js"></script>
+
+    <!-- Bootstap JavaScriptleri -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

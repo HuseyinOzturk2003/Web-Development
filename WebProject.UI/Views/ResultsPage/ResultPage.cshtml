@@ -1,0 +1,204 @@
+﻿@model List<WebProject.UI.Models.ViewModel>
+@{
+    ViewBag.Title = "ResultPage";
+}
+@{
+    float totalExpense = 0;
+    float totalIncome = 0;
+    float totalOneTime = 0;
+}
+
+
+<!-- Contains the tables for Income-Spending-OTP -->
+<div class="container">
+
+
+
+    <br />
+    <br />
+
+    <h1 class="text-center text-white">Income Table</h1>
+
+    <br />
+    <br />
+
+    <!-- Income Table -->
+    <table class="table table-striped table-dark">
+
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>1 Month </th>
+                <th>1 Year</th>
+                <th>3 Years</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Where(x => x.IsIncome.Equals(true)).ToList())
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Total €</td>
+                    <td>@(item.Total * 12) €</td>
+                    <td>@(item.Total * 36) €</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <br />
+    <br />
+
+    <h1 class="text-center text-white">Expense Table</h1>
+
+    <br />
+    <br />
+
+    <!-- Monthly Spending Table-->
+    <table class="table table-striped table-dark">
+
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>1 Month</th>
+                <th>1 Year</th>
+                <th>3 Years</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Where(x => x.IsExpense.Equals(true)).ToList())
+            {
+                <tr>
+                    <td>@item.Name</td>
+
+                    <td>@item.Total €</td>
+                    <td>@(item.Total * 12) €</td>
+                    <td>@(item.Total * 36) €</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+
+    <h1 class="text-center text-white">One Time</h1>
+
+    <br />
+    <br />
+
+    <!-- OTP Table -->
+    <table class="table table-striped table-dark">
+
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Total</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Where(x => x.IsOneTime.Equals(true)).ToList())
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Total €</td>
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+
+    @foreach (var item in Model)
+    {
+
+
+        if (item.IsExpense.Equals(true))
+        {
+            totalExpense += item.Total;
+        }
+        else if (item.IsOneTime.Equals(true))
+        {
+            totalOneTime += item.Total;
+        }
+        else if (item.IsIncome.Equals(true))
+        {
+            totalIncome += item.Total;
+
+        }
+    }
+
+
+    <h1 class="text-center text-white">Summary Table</h1>
+
+    <br />
+    <br />
+
+
+    <!-- Summary Table -->
+    <table class="table   table-dark">
+
+        <thead>
+            <tr>
+
+                <th>Category</th>
+                <th>1 Month</th>
+                <th>1 Year</th>
+                <th>3 Years</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-success">
+                <td>Monthly Income</td>
+                <td>@totalIncome €</td>
+                <td>@(totalIncome*12) €</td>
+                <td>@(totalIncome*36) €</td>
+            </tr>
+            <tr class="text-danger">
+                <td>Monthly Expenses</td>
+                <td>@totalExpense €</td>
+                <td>@(totalExpense * 12) €</td>
+                <td>@(totalExpense * 36) €</td>
+            </tr>
+            <tr class="text-danger">
+                <td>One Time Purchases</td>
+                <td>@totalOneTime € (Total Spending)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="text-warning">
+                <td>Result Total (excluding OTP)</td>
+                <td>@(totalIncome-(totalExpense)) €</td>
+                <td>@((totalIncome-(totalExpense))*12) €</td>
+                <td>@((totalIncome -(totalExpense))*36) €</td>
+            </tr>
+            <tr class="text-warning">
+                <td>Result Total (including OTP)</td>
+                <td>@(totalIncome-(totalOneTime+totalExpense)) €</td>
+                <td>@((totalIncome-(totalExpense))*12 - totalOneTime) €</td>
+                <td>@((totalIncome -(totalExpense))*36 - totalOneTime) €</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <!-- Print this page button -->
+    <div class="text-center">
+        <a class="btn btn-dark m-5" onclick="window.print()">Print This Page</a>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "BaseAddUpdateDeletePage";
+}
+
+<div class="container mb-5 mt-5">
+    <h1 class="text-center text-white"> Monthly Expenses &  Income </h1>
+    <button type="button" class="btn btn-outline-success fw-bold" data-bs-toggle="modal" data-bs-target="#AddIncomeExpenseModal" onclick="OpenAddIncomeExpenseModalPopUp()">Add Data</button>
+    <table class="table  text-white text-center fw-bold">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Explanation</th>
+                <th scope="col">Price</th>
+                <th scope="col">AveragePrice</th>
+                <th scope="col">IsIncome</th>
+                <th scope="col">IsExpense</th>
+                <th scope="col">IsOneTime</th>
+                <th scope="col">ImagesPath</th>
+                <th scope="col">Action to be taken</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+</div>
+
+<div id="divcontent">
+
+</div>
+
+
+ 

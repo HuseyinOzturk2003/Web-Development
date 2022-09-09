@@ -1,0 +1,54 @@
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.BLL.dll.config
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.BLL.dll
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.BLL.pdb
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.dll
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.DAL.dll
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.Entity.dll
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.DAL.pdb
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.DAL.dll.config
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.Entity.pdb
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.Entity.dll.config
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.xml
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.csprojAssemblyReference.cache
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.CoreCompileInputs.cache
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.CopyComplete
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.dll
+C:\Users\yonet\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.pdb
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.BLL.dll.config
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.BLL.dll
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.BLL.pdb
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.DAL.dll
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.Entity.dll
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.DAL.pdb
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.DAL.dll.config
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.Entity.pdb
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\WebProject.Entity.dll.config
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.CopyComplete
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.dll
+C:\Users\PC\Desktop\WebProject\WebProject.BLL\obj\Debug\WebProject.BLL.pdb
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.BLL.dll.config
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.BLL.dll
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.BLL.pdb
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.DAL.dll
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.Entity.dll
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.DAL.pdb
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.DAL.dll.config
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.Entity.pdb
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\WebProject.Entity.dll.config
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\obj\Debug\WebProject.BLL.csproj.CopyComplete
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\obj\Debug\WebProject.BLL.dll
+C:\Users\PC\Desktop\Tamamlanmış Proje\1\WebProject.BLL\obj\Debug\WebProject.BLL.pdb

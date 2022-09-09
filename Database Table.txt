@@ -1,0 +1,18 @@
+	IncomeExpenseTable
+
+1) ID
+2) Name
+3) Explanation
+4) Price
+5) Average Price
+6) IsIncome
+7) IsExpense
+8) IsOneTime
+
+
+	Report Table
+
+1) ID
+2) IncomeExpenseTable
+3) Count
+4) Total

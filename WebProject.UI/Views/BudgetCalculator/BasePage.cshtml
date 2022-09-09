@@ -1,0 +1,114 @@
+﻿@model List<WebProject.Entity.Concrete.IncomeExpense>
+
+@{
+    ViewBag.Title = "BasePage";
+}
+
+
+<div class="container">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        @Html.ActionLink("Add Item", "BaseAddUpdateDeletePage", null, new { @class = "btn btn-primary me-md-2 mt-3" })
+    </div>
+
+    <h1 id="MonthlyExpHeader" class="mt-5 mb-5">Monthly Expenses</h1>
+
+    <!--Monthly Expenses Start -->
+   
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model.Where(x => x.IsExpense.Equals(true)).ToList())
+        {
+            <div class="col">
+
+                <div class="card h-100 backgroundColorCard">
+
+                    <div class="text-center">
+                        <img src="@item.ImagePath " class="img-fluid" alt="..." width="250" height="250">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Explanation</p>
+                        <input id="@item.Name" class="text-center" type="number" name="" min="0" value="0" placeholder="Avg @item.AveragePrice.ToString()">
+                        <button class="btn btn-outline-success" onclick="AddReportData(@item.ID,document.getElementById('@item.Name').value)">ADD</button>
+                    </div>
+
+                </div>
+
+            </div>
+        }
+        </div>
+   
+
+        <!-- Monthly  Expenses Finish -->
+
+
+        <h1 id="MonthlyExpHeader" class="mt-5 mb-5">Income</h1>
+
+
+        <!-- Monthly Income Starts -->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var item in Model.Where(x => x.IsIncome.Equals(true)).ToList())
+            {
+                <div class="col">
+
+                    <div class="card h-100 backgroundColorCard">
+
+                        <div class="text-center">
+                            <img src="@item.ImagePath" class="img-fluid" alt="..." width="250" height="250">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">@item.Name</h5>
+                            <p class="card-text">@item.Explanation</p>
+                            <input id="@item.Name" class="text-center" type="number" name="" min="0" value="0" placeholder="Avg @item.AveragePrice.ToString()">
+                            <button class="btn btn-outline-success" onclick="AddReportData(@item.ID,document.getElementById('@item.Name').value)">ADD</button>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            }
+            </div>
+
+        <!-- Monthly Income End -->
+
+
+        <h1 id="MonthlyExpHeader" class="mt-5 mb-5">One Time Purchases</h1>
+
+        <!-- One Time Purchases Start -->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var item in Model.Where(x => x.IsOneTime.Equals(true)))
+            {
+                <div class="col">
+
+                    <div class="card h-100 backgroundColorCard">
+
+                        <div class="text-center">
+                            <img src="@item.ImagePath" class="img-fluid" alt="..." width="250" height="250">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">@item.Name</h5>
+                            <p class="card-text">@item.Explanation</p>
+                            <input id="@item.Name" class="text-center" type="number" name="" min="0" value="0" placeholder="Avg:?">
+                            <button class="btn btn-outline-success" onclick="AddReportData(@item.ID,document.getElementById('@item.Name').value)">ADD</button>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            }
+            </div>
+
+
+        <!-- One Time Purchases Finish -->
+        <!-- Calculate Start -->
+
+        <div class="text-center">
+            <a class="btn btn-dark m-5" href="/ResultsPage/ResultPage">Calculate</a>
+        </div>
+
+        <!-- Calculate Finish -->
+    </div>

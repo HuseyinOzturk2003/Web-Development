@@ -1,0 +1,61 @@
+﻿@model WebProject.Entity.Concrete.IncomeExpense
+
+<!-- Modal -->
+<div class="modal fade" id="UpdateIncomeExpenseModal" tabindex="-1" aria-labelledby="UpdateIncomeExpenseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="UpdateIncomeExpenseModalLabel">Update Income Expense Entity</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.HiddenFor(x => x.ID)
+
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.Name, new { @class = "form-label" })
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "Name" })
+                        @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.Explanation, new { @class = "form-label" })
+                        @Html.TextBoxFor(x => x.Explanation, new { @class = "form-control", placeholder = "Explanation" })
+                        @Html.ValidationMessageFor(x => x.Explanation, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.Price, new { @class = "form-label" })
+                        @Html.TextBoxFor(x => x.Price, new { @class = "form-control", placeholder = "Price", type = "number", step = "0.01" })
+                        @Html.ValidationMessageFor(x => x.Price, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.AveragePrice, new { @class = "form-label" })
+                        @Html.TextBoxFor(x => x.AveragePrice, new { @class = "form-control", placeholder = "AveragePrice", type = "number", step = "0.01" })
+                        @Html.ValidationMessageFor(x => x.AveragePrice, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.IsIncome, new { @class = "form-label" })
+                        @Html.CheckBoxFor(x => x.IsIncome)
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.IsExpense, new { @class = "form-label" })
+                        @Html.CheckBoxFor(x => x.IsExpense)
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.IsOneTime, new { @class = "form-label" })
+                        @Html.CheckBoxFor(x => x.IsOneTime)
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.ImagePath, new { @class = "form-label" })
+                        @Html.TextBoxFor(x => x.ImagePath, new { @class = "form-control", placeholder = "ImagePath"})
+                        @Html.ValidationMessageFor(x => x.ImagePath, "", new { @class = "text-danger" })
+                    </div>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnUpdateIncomeExpense" onclick="return UpdateIncomeExpense()">Update Income Exxpense</button>
+                <button type="button" class="btn btn-defaul">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
