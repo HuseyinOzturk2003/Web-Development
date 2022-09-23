@@ -19,8 +19,8 @@ namespace WebProject.DAL.Concrete
 
         }
 
-        //Construction
-        //Dbset arasına yazılan sınıflarlar bizim veritabanındaki tablolarımızdır.
+        //Construction of the database tables 
+        //The classes written between dbset are our tables in the database.
 
         public DbSet<IncomeExpense> IncomeExpenses { get; set; }
         public DbSet<Report> Reports { get; set; }
