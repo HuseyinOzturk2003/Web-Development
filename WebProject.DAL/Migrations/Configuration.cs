@@ -12,7 +12,7 @@
             AutomaticMigrationsEnabled = true;
         }
 
-        //Bu bölümde Migration başlatılır yani veritabanına yazılan kodlar ile tablolar inaşa edlir.
+       //In this section, Migration is started, that is, tables are built with the codes written to the database.
 
         protected override void Seed(WebProject.DAL.Concrete.WebDatabase context)
         {
