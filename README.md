@@ -1,3 +1,8 @@
 # Web-Development
-My web application for the "Project: Java and Web Development
-Please make use of the data script to initiliaze the application with categories and their images displayed correctly
+
+Instructions for the usage of data scripts:
+1- Open NuGet package manager
+2- Write"update-database"
+3- Click enter
+
+
