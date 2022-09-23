@@ -2,9 +2,9 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// Bir bütünleştirilmiş koda ilişkin Genel Bilgiler aşağıdaki öznitelikler kümesiyle
-// denetlenir. Bütünleştirilmiş kod ile ilişkili bilgileri değiştirmek için
-// bu öznitelik değerlerini değiştirin.
+// General Information about an assembly with the following set of attributes
+// is checked. To change the information associated with the assembly
+// change these attribute values.
 [assembly: AssemblyTitle("WebProject.DAL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -14,23 +14,24 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// ComVisible özniteliğinin false olarak ayarlanması bu bütünleştirilmiş koddaki türleri
-// COM bileşenleri için görünmez yapar. Bu bütünleştirilmiş koddaki bir türe
-// erişmeniz gerekirse ComVisible özniteliğini o türde true olarak ayarlayın.
+// Setting the ComVisible attribute to false types in this assembly
+// Makes COM components invisible. A type in this assembly
+// set the ComVisible attribute to true of that type if you need access.
 [assembly: ComVisible(false)]
 
-// Bu proje COM'un kullanımına sunulursa, aşağıdaki GUID tür kitaplığının kimliği içindir
+
+// If this project is made available to COM, the following GUID is for the ID of the type library
 [assembly: Guid("7cbb3df2-09f9-4745-91a8-8be1278721cd")]
 
-// Bir derlemenin sürüm bilgileri aşağıdaki dört değerden oluşur:
+// An assembly's version information consists of the following four values:
 //
-//      Ana Sürüm
-//      İkincil Sürüm 
-//      Yapı Numarası
-//      Düzeltme
+// Main Release
+// Secondary Version
+// Build Number
+// Correction
 //
-// Tüm değerleri belirtebilir veya varsayılan Derleme ve Düzeltme Numaralarını kullanmak için
-// '*' kullanarak varsayılana ayarlayabilirsiniz:
+// You can specify all values or to use the default Build and Revision Numbers
+// You can set it to default using '*':
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
